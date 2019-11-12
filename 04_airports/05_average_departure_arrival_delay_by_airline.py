@@ -55,7 +55,7 @@ class MRFlights(MRJob):
             total_arrival += value[1]
             num_elements +=1
 
-        yield self.airline_names[key], (total_departure/num_elements ,total_arrival/num_elements)  #key  == month
+        yield self.airline_names[key], (total_departure/num_elements ,total_arrival/num_elements)  #key  == airline
 
 
 
